@@ -1,4 +1,5 @@
-import db
+from db import eleitores
+from peewee import *
 
 def frasep():
     print('*' * 40)
@@ -44,3 +45,14 @@ def verifyg(x):
     else:
         print('Candidato inexistente')
         print('Voto anulado')
+def msgadd():
+    return "Deseja adicionar este titulo? "
+
+nomes = [
+    'LUIS INACIO LULA DA SILVA',
+    'JAIR MESSIAS BOLSONARO',
+    'HAMILTON MOURÃO',
+    'TERESA LEITÃO',
+    'TARCÍSIO FREITAS',
+    'EDUARDO LEITE',
+]
